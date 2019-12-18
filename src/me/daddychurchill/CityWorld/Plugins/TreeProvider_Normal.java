@@ -4,9 +4,9 @@ import me.daddychurchill.CityWorld.CityWorldGenerator;
 
 class TreeProvider_Normal extends TreeProvider {
 
-	public TreeProvider_Normal(CityWorldGenerator generator) {
-		super(generator);
-	}
+    public TreeProvider_Normal(CityWorldGenerator generator) {
+        super(generator);
+    }
 
 //	@Override
 //	protected boolean generateNormalTree(CityWorldGenerator generator, SupportBlocks chunk, int x, int y, int z, TreeType treeType, boolean includeLeaves) {

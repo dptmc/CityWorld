@@ -4,12 +4,12 @@ import me.daddychurchill.CityWorld.Support.PlatMap;
 
 abstract class AstralBuriedCityLot extends AstralStructureLot {
 
-	static final int StreetLevel = 1;// 64
+    static final int StreetLevel = 1;// 64
 
-	AstralBuriedCityLot(PlatMap platmap, int chunkX, int chunkZ) {
-		super(platmap, chunkX, chunkZ);
-		// TODO Auto-generated constructor stub
-	}
+    AstralBuriedCityLot(PlatMap platmap, int chunkX, int chunkZ) {
+        super(platmap, chunkX, chunkZ);
+        // TODO Auto-generated constructor stub
+    }
 //	
 //	@Override
 //	protected void generateActualBlocks(WorldGenerator generator,

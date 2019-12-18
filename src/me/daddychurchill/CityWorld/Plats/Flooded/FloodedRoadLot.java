@@ -6,14 +6,14 @@ import me.daddychurchill.CityWorld.Support.PlatMap;
 
 public class FloodedRoadLot extends RoadLot {
 
-	private FloodedRoadLot(PlatMap platmap, int chunkX, int chunkZ, long globalconnectionkey, boolean roundaboutPart) {
-		super(platmap, chunkX, chunkZ, globalconnectionkey, roundaboutPart);
+    private FloodedRoadLot(PlatMap platmap, int chunkX, int chunkZ, long globalconnectionkey, boolean roundaboutPart) {
+        super(platmap, chunkX, chunkZ, globalconnectionkey, roundaboutPart);
 
-	}
+    }
 
-	@Override
-	public PlatLot newLike(PlatMap platmap, int chunkX, int chunkZ) {
-		return new FloodedRoadLot(platmap, chunkX, chunkZ, connectedkey, roundaboutRoad);
-	}
+    @Override
+    public PlatLot newLike(PlatMap platmap, int chunkX, int chunkZ) {
+        return new FloodedRoadLot(platmap, chunkX, chunkZ, connectedkey, roundaboutRoad);
+    }
 
 }
