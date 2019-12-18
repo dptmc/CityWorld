@@ -19,7 +19,7 @@ pipeline {
     }
 	post {
         always {
-            archiveArtifacts artifacts: 'target/CityWorld.jar', fingerprint: true
+            archiveArtifacts artifacts: 'target/CityWorld-*.jar', fingerprint: true
         }
     }
 }
