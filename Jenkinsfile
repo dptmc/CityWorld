@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+	def shell(command) {
+		return bat(returnStdout: true, script: "sh -x -c \"${command}\"").trim()
+	}
+
     stages {
         stage('Build') {
             steps {
-				bat 'mvn.cmd clean package'
+				sh 'mvn.cmd clean package'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
