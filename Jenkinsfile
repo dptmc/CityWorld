@@ -1,25 +1,12 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3-alpine'
-            args '-v /root/.m2:/root/.m2'
-        }
-    }
+    agent any
+
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'make' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
-        }
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-    }
-	post {
-        always {
-            archiveArtifacts artifacts: 'target/CityWorld-*.jar', fingerprint: true
         }
     }
 }
