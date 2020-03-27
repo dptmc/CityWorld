@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'mvn.cmd clean package'
+				sh 'mvn clean package'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
