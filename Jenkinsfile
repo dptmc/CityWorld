@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'mvn.cmd clean package'
+				if (isUnix()) --> sh "mvn clean package"
+				else --> bat "mvn.cmd clean package"
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
