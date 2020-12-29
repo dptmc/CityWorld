@@ -7,9 +7,10 @@ import org.bukkit.material.Tree;
 
 public class Log extends Tree {
 
-    public Log() {
-        super(Material.SPRUCE_LOG);
-    }
+	public Log()
+	{
+		super(Material.SPRUCE_LOG);
+	}
 
     public Log(TreeSpecies species) {
         super(species);
@@ -18,10 +19,10 @@ public class Log extends Tree {
     public Log(TreeSpecies species, BlockFace dir) {
         super(species, dir);
     }
-
-    @Override
-    public Log clone() {
-        return (Log) super.clone();
-    }
+    
+	@Override
+	public Log clone() {
+		return (Log)super.clone();
+	}
 
 }
