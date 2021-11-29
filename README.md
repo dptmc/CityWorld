@@ -18,6 +18,8 @@ DaddyChurchill always said: The great outdoors is all good and fine but sometime
 - Download/install maven
 - Download the source
 - Unzip the source
+  - `unzip CityWorld-master.zip` on Linux or MacOS
+  - something similar on Windows
 - Change directory to the source tree
   - `cd CityWorld-main` on Linux or MacOS
   - something similar on Windows
