@@ -13,3 +13,13 @@ DaddyChurchill always said: The great outdoors is all good and fine but sometime
   - Biome.DESERT_HILLS -> Biome.DESERT
   - Biome.SNOWY_MOUNTAINS -> Biome.SNOWY_SLOPES
   - Biome.TAIGA_HILLS -> Biome.WINDSWEPT_HILLS
+
+#### How to build it
+- Download/install maven
+- Download the source
+- Unzip the source
+- Change directory to the source tree
+  - `cd CityWorld-main` on Linux or MacOS
+  - something similar on Windows
+- Type `mvn package`
+- Look in the `target` subdirectory for the JAR
